@@ -1238,6 +1238,15 @@ footer .footer-brands {
     padding: 10px !important;
   }
 
+  .process-center .process-body{
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+
+  .sm-grid-2{
+    grid-template-columns: repeat(2,1fr) !important;
+  }
+
 }
 
 
@@ -1248,7 +1257,7 @@ footer .footer-brands {
 }
 
 .custom-table{
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 /* custom table end */
 

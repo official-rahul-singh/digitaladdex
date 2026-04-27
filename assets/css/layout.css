@@ -841,6 +841,7 @@ z-index: -1;
  list-style: none;
  position: relative;
  padding-left: 6px;
+ text-align: left;
 }
 
 .list-icon li::before{
@@ -1806,6 +1807,10 @@ footer .dl-timline {
     margin: 0 15px;
   }
 
+    .grid-md-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 }
 
 .col-6 {
@@ -2056,6 +2061,8 @@ footer .dl-timline {
   .dl-block-faq{
     row-gap: 10px;
   }
+
+
 
 }
 
