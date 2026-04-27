@@ -1214,6 +1214,15 @@ footer .footer-brands {
   .grid-4 {
     grid-template-columns: repeat(3,1fr);
   }
+
+    .hero-section .row{
+    flex-direction: column-reverse;
+  }
+  .hero-section img{
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1246,6 +1255,13 @@ footer .footer-brands {
   .sm-grid-2{
     grid-template-columns: repeat(2,1fr) !important;
   }
+
+  .hero-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
 
 }
 
