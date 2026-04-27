@@ -1,0 +1,128 @@
+# Digitalladdex Project - Cursor Rules
+
+## Project Overview
+This is a frontend web project (HTML/CSS/JavaScript) that appears to be part of a WordPress plugin or theme component. The project uses vanilla JavaScript, custom CSS with CSS variables, and follows a component-based structure.
+
+## Technology Stack
+- **HTML5**: Semantic HTML structure
+- **CSS3**: Custom properties (CSS variables), modern CSS features
+- **Vanilla JavaScript**: No frameworks, pure ES6+ JavaScript
+- **Fonts**: Poppins font family (multiple weights: 400, 500, 600, 700, 800)
+- **Icons**: SVG icons (inline SVG)
+
+## Code Style Guidelines
+
+### HTML
+- Use semantic HTML5 elements
+- Include proper accessibility attributes (aria-label, alt text, etc.)
+- Use consistent indentation (2 spaces)
+- Include proper meta tags and viewport settings
+- Use descriptive class names with the `dl-` prefix for custom components
+- Always include proper alt text for images
+- Use proper heading hierarchy (h1, h2, h3, etc.)
+
+### CSS
+- Use CSS custom properties (variables) defined in `:root`
+- Follow BEM-like naming convention with `dl-` prefix
+- Use consistent spacing and indentation (2 spaces)
+- Group related properties together
+- Use modern CSS features (flexbox, grid, custom properties)
+- Maintain responsive design principles
+- Use meaningful class names that describe purpose, not appearance
+- Keep layout styles in `layout.css` and component styles in `style.css`
+
+### JavaScript
+- Use modern ES6+ syntax (arrow functions, const/let, template literals)
+- Use `DOMContentLoaded` event listener for initialization
+- Use descriptive variable and function names
+- Add comments for complex logic
+- Handle edge cases (null checks, element existence checks)
+- Use event delegation where appropriate
+- Keep functions focused and single-purpose
+- Use `querySelector` and `querySelectorAll` for DOM manipulation
+
+## File Structure
+```
+/
+├── index.html
+├── assets/
+│   ├── css/
+│   │   ├── layout.css (layout and grid systems)
+│   │   └── style.css (component styles)
+│   ├── js/
+│   │   └── script.js (main JavaScript file)
+│   ├── fonts/
+│   │   └── poppins/ (font files)
+│   └── images/ (SVG and image assets)
+```
+
+## Naming Conventions
+- **CSS Classes**: Use `dl-` prefix for custom components (e.g., `dl-card`, `dl-menu`, `dl-logo`)
+- **JavaScript Variables**: Use camelCase (e.g., `searchIcon`, `toggleMenuBtn`)
+- **CSS Variables**: Use kebab-case with descriptive names (e.g., `--pc`, `--sc`, `--bg-1`)
+- **IDs**: Use descriptive names (e.g., `counter1`, `scroll_to_top`)
+
+## Best Practices
+
+### Performance
+- Use `fetchpriority` and `decoding` attributes on images
+- Preload critical fonts
+- Minimize inline styles
+- Use efficient selectors
+- Optimize SVG icons
+
+### Accessibility
+- Include proper ARIA labels
+- Use semantic HTML elements
+- Ensure keyboard navigation works
+- Provide alt text for all images
+- Use proper heading hierarchy
+- Ensure sufficient color contrast
+
+### Responsive Design
+- Use mobile-first approach
+- Test on multiple screen sizes
+- Use relative units (rem, em, %) where appropriate
+- Use CSS Grid and Flexbox for layouts
+- Implement proper breakpoints
+
+### Code Organization
+- Group related functionality together
+- Use comments to separate sections
+- Keep functions small and focused
+- Avoid deep nesting
+- Use consistent formatting
+
+## Common Patterns
+
+### CSS Variables
+The project uses CSS custom properties defined in `:root`:
+- Color variables: `--pc`, `--sc`, `--black`, `--white`, `--bg-1`, etc.
+- Typography: `--fw-1`, `--fw-2`, `--fs-1`, `--fs-2`, etc.
+- Spacing/Radius: `--rad-1`, `--rad-2`, `--rad-0`
+
+### JavaScript Patterns
+- Event listeners wrapped in `DOMContentLoaded`
+- Toggle functions for mobile menus
+- Counter animations
+- Scroll-based interactions
+- Dropdown menu handling
+
+## When Adding New Features
+1. Follow existing naming conventions
+2. Use existing CSS variables where possible
+3. Maintain consistent code style
+4. Add appropriate comments
+5. Test for accessibility
+6. Ensure responsive behavior
+7. Check browser compatibility
+
+## Code Quality
+- Write clean, readable code
+- Avoid magic numbers (use variables)
+- Comment complex logic
+- Keep functions under 50 lines when possible
+- Use meaningful names
+- Remove console.logs before production
+- Handle errors gracefully
+
